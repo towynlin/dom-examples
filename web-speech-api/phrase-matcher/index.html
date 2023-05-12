@@ -1,27 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width" />
 
-    <title>Phrase matcher</title>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Phrase matcher</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-    <link rel="stylesheet" href="style.css" />
-  </head>
+<body>
+  <h1>Phrase matcher</h1>
+  <p>
+    This is a very slight riff on the MDN
+    <a href="https://mdn.github.io/dom-examples/web-speech-api/phrase-matcher/">demo</a>
+    of the Web Speech API. See my
+    <a href="https://github.com/towynlin/dom-examples/tree/feat-speech-recognition-with-user-phrases/web-speech-api/phrase-matcher">fork</a>.
+  </p>
+  <p>Press the button then say the phrase to test the recognition.</p>
 
-  <body>
-    <h1>Phrase matcher</h1>
-    <p>Press the button then say the phrase to test the recognition.</p>
+  <button>Start new test</button>
 
-    <button>Start new test</button>
+  <div>
+    <p class="phrase">
+      <label for="phrase">Phrase:</label>
+      <textarea id="phrase"></textarea>
+    </p>
+    <p class="result">Right or wrong?</p>
+    <p class="output">...diagnostic messages</p>
+  </div>
 
-    <div>
-      <p class="phrase">Phrase...</p>
-      <p class="result">Right or wrong?</p>
-      <p class="output">...diagnostic messages</p>
-    </div>
+  <script src="script.js"></script>
+</body>
 
-    <script src="script.js"></script>
-  </body>
 </html>
